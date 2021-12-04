@@ -1,5 +1,5 @@
-#ifndef CS124_LAB3_STACK_HPP
-#define CS124_LAB3_STACK_HPP
+#ifndef CS124_TEAM_STACK_HPP
+#define CS124_TEAM_STACK_HPP
 
 #include "Node.hpp"
 
