@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 
-add_executable(cs_124_team_project Stack.hpp)
+add_executable(cs_124_team_project structures/Stack.hpp main.cpp)
