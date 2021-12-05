@@ -1,8 +1,6 @@
 #ifndef CS124_TEAM_STACK_HPP
 #define CS124_TEAM_STACK_HPP
 
-#include "Node.hpp"
-
 template <typename StackNodeType>
 class StackNode {
 public:
