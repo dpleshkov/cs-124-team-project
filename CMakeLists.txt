@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 
-add_executable(cs_124_team_project structures/Stack.hpp structures/HashMap.hpp structures/Queue.hpp DatabaseParser.hpp main.cpp)
+add_executable(cs_124_team_project structures/Stack.hpp structures/HashMap.hpp structures/Queue.hpp TPCDBDatabaseParser.hpp main.cpp)

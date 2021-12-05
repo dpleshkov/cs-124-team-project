@@ -23,9 +23,9 @@ int stringHash(std::string str) {
     return std::abs(h % 65535);
 }
 
-class DatabaseParser {
+class TPCDBDatabaseParser {
 public:
-    explicit DatabaseParser(const std::string &filename) {
+    explicit TPCDBDatabaseParser(const std::string &filename) {
         std::ifstream file(filename);
         std::string line;
         std::getline(file, line); // skip first line

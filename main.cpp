@@ -1,8 +1,9 @@
 #include <iostream>
-#include "DatabaseParser.hpp"
+#include "TPCDBDatabaseParser.hpp"
 
 int main() {
-    DatabaseParser parser("../data/tpcdb.csv");
+    Computer comp;
+    TPCDBDatabaseParser parser("../data/tpcdb.csv");
     auto consumptionDB = parser.getHashMap();
     std::cout << "Hello world" << std::endl;
 }
