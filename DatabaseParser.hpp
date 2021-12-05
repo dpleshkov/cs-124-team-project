@@ -45,13 +45,13 @@ public:
                     } else if (field == 1) {
                         computer.modelName = data;
                     } else if (field == 2 && !data.empty()) {
-                        std::cout << "Converting: " << data << std::endl;
+                        // std::cout << "Converting: " << data << std::endl;
                         computer.normalWattage = std::stod(data);
                     } else if (field == 3 && !data.empty()) {
-                        std::cout << "Converting: " << data << std::endl;
+                        // std::cout << "Converting: " << data << std::endl;
                         computer.standbyWattage = std::stod(data);
                     } else if (field == 4 && !data.empty()) {
-                        std::cout << "Converting: " << data << std::endl;
+                        // std::cout << "Converting: " << data << std::endl;
                         computer.maxWattage = std::stod(data);
                     }
                     field++;
