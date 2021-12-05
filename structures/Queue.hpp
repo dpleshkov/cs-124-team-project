@@ -4,7 +4,7 @@
 template <typename QueueNodeType>
 class QueueNode {
 public:
-    explicit StackNode(QueueNodeType value) {
+    explicit QueueNode(QueueNodeType value) {
         this -> value = value;
     };
     QueueNode<QueueNodeType>* next = nullptr;
@@ -26,7 +26,7 @@ public:
      */
     void dequeue() {
         if (head == nullptr) return;
-        Node<QueueType>* removed = head;
+        QueueNode<QueueType>* removed = head;
         if (tail == removed) {
             tail = nullptr;
         }

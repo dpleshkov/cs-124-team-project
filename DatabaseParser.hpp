@@ -17,11 +17,10 @@ struct Computer {
 
 int stringHash(std::string str) {
     int h = 0;
-    for (char i : str)
-    {
+    for (char i : str) {
         h = 31 * h + i;
     }
-    return h;
+    return std::abs(h % 65535);
 }
 
 class DatabaseParser {
@@ -35,7 +34,7 @@ public:
             Computer computer;
             int field = 0;
             for (char c: line) {
-                if (c == ',') {
+                if (c == '|') {
                     std::string data;
                     while (!buffer.isEmpty()) {
                         data += buffer.peek();
@@ -45,11 +44,14 @@ public:
                         computer.brandName = data;
                     } else if (field == 1) {
                         computer.modelName = data;
-                    } else if (field == 2) {
+                    } else if (field == 2 && !data.empty()) {
+                        std::cout << "Converting: " << data << std::endl;
                         computer.normalWattage = std::stod(data);
-                    } else if (field == 3) {
+                    } else if (field == 3 && !data.empty()) {
+                        std::cout << "Converting: " << data << std::endl;
                         computer.standbyWattage = std::stod(data);
-                    } else if (field == 4) {
+                    } else if (field == 4 && !data.empty()) {
+                        std::cout << "Converting: " << data << std::endl;
                         computer.maxWattage = std::stod(data);
                     }
                     field++;
@@ -62,10 +64,10 @@ public:
     }
 
     HashMap<std::string, HashMap<std::string, Computer>*>* getHashMap() {
-        auto output = new HashMap<std::string, HashMap<std::string, Computer>*>(stringHash, 50);
+        auto output = new HashMap<std::string, HashMap<std::string, Computer>*>(stringHash, 200);
         for (const auto& computer : computers) {
             if (!(output -> exists(computer.brandName))) {
-                auto models = new HashMap<std::string, Computer>(stringHash, 100);
+                auto models = new HashMap<std::string, Computer>(stringHash, 200);
                 output -> set(computer.brandName, models);
                 models -> set(computer.modelName, computer);
             } else {

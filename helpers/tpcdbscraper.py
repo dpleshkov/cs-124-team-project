@@ -14,18 +14,18 @@ for x in range(1, 15):
             for r in child.children:
                 if i == 2:
                     #print("Brand:", r.a.text)
-                    row += r.a.text + ","
+                    row += r.a.text + "|"
                 if i == 3:
                     #print("Model:", r.a.text)
-                    row += r.a.text + ","
+                    row += r.a.text + "|"
                 if i == 4:
                     #print("Normal:", r.text)
                     if len(r.text):
-                        row += r.text.split()[0] + ","
+                        row += r.text.split()[0] + "|"
                 if i == 5:
                     #print("Standby:", r.text)
                     if len(r.text):
-                        row += r.text.split()[0] + ","
+                        row += r.text.split()[0] + "|"
                 if i == 6:
                     #print("Max:", r.text)
                     if len(r.text):
