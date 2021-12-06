@@ -8,6 +8,7 @@ template <typename PairKey, typename PairValue>
 struct HashMapNode {
     PairKey key;
     PairValue value;
+    HashMapNode *next;
 };
 
 template <typename HashMapKey, typename HashMapValue>
@@ -81,9 +82,13 @@ public:
         int index = hashFunction(key) % capacity;
         while (table[index] != nullptr) {
             if (table[index] -> key == key) {
+                if (table[index] -> value == value){ 
+                    return;
+                }
                 table[index] -> value = value;
                 return;
             }
+            table[index] = table[index] -> next;
             index = (index + 1) % capacity;
             count++;
             if (count > capacity) {
