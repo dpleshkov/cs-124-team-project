@@ -8,7 +8,7 @@ template <typename PairKey, typename PairValue>
 struct HashMapNode {
     PairKey key;
     PairValue value;
-    HashMapNode *next;
+    HashMapNode<PairKey, PairValue> *next = nullptr;
 };
 
 template <typename HashMapKey, typename HashMapValue>
@@ -35,17 +35,13 @@ public:
      * @return true/false
      */
     bool exists(HashMapKey key) {
-        int count = 0;
         int index = hashFunction(key) % capacity;
-        while (table[index] != nullptr) {
-            if (table[index] -> key == key) {
+        auto current = table[index];
+        while (current != nullptr) {
+            if (current -> key == key) {
                 return true;
             }
-            index = (index + 1) % capacity;
-            count++;
-            if (count > capacity) {
-                return false;
-            }
+            current = current -> next;
         }
         return false;
     }
@@ -58,16 +54,12 @@ public:
      */
     HashMapValue get(HashMapKey key) {
         int index = hashFunction(key) % capacity;
-        int count = 0;
-        while (table[index] != nullptr) {
-            if (table[index] -> key == key) {
-                return table[index] -> value;
+        auto current = table[index];
+        while (current != nullptr) {
+            if (current -> key == key) {
+                return current -> value;
             }
-            index = (index + 1) % capacity;
-            count++;
-            if (count > capacity) {
-                break;
-            }
+            current = current -> next;
         }
         return HashMapValue();
     }
@@ -78,25 +70,9 @@ public:
      * @param value
      */
     void set(HashMapKey key, HashMapValue value) {
-        int count = 0;
         int index = hashFunction(key) % capacity;
-        while (table[index] != nullptr) {
-            if (table[index] -> key == key) {
-                if (table[index] -> value == value){ 
-                    return;
-                }
-                table[index] -> value = value;
-                return;
-            }
-            table[index] = table[index] -> next;
-            index = (index + 1) % capacity;
-            count++;
-            if (count > capacity) {
-                break;
-            }
-        }
-        table[index] = new HashMapNode<HashMapKey, HashMapValue>{key, value};
-        size++;
+        auto current = table[index];
+        table[index] = new HashMapNode<HashMapKey, HashMapValue>{key, value, current};
     }
 
     /**
@@ -104,28 +80,43 @@ public:
      * @param key
      */
     void remove(HashMapKey key) {
-        int count = 0;
         int index = hashFunction(key) % capacity;
-        while (table[index] != nullptr) {
-            if (table[index] -> key == key) {
-                delete table[index];
-                table[index] = nullptr;
-                size--;
-                return;
+        auto current = table[index];
+        HashMapNode<HashMapKey, HashMapValue>* last = nullptr;
+        while (current != nullptr) {
+            if (current -> key == key) {
+                if (last != nullptr) {
+                    last -> next = current -> next;
+                    delete current;
+                    return;
+                } else {
+                    table[index] = current -> next;
+                }
             }
-            index = (index + 1) % capacity;
-            count++;
-            if (count > capacity) {
-                return;
+            last = current;
+            current = current -> next;
+        }
+    }
+
+    std::vector<HashMapKey> getKeys() {
+        std::vector<HashMapKey> output;
+        for (auto i : table) {
+            auto current = i;
+            while (current != nullptr) {
+                output.push_back(current -> key);
+                current = current -> next;
             }
         }
+        return output;
     }
 
     ~HashMap() {
         for (int i = 0; i < capacity; i++) {
-            if (table[i] == nullptr) continue;
-            delete table[i];
-            table[i] = nullptr;
+            while (table[i] != nullptr) {
+                auto deleted = table[i];
+                table[i] = table[i] -> next;
+                delete deleted;
+            }
         }
     }
 private:
