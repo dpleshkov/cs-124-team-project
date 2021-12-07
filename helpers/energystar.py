@@ -33,4 +33,4 @@ def get_tec(row):
 
 
 for r in reader:
-    print(r[2] + "|" + r[3] + "|" + r[4] + "|" + r[7] + "|" + get_sleep_mode(r) + "|" + get_long_idle(r) + "|" + get_short_idle(r) + "|" + get_tec(r))
+    print(r[2] + "|" + r[3] + "|" + r[4] + "|" + r[7] + "|" + get_sleep_mode(r) + "|" + get_long_idle(r) + "|" + get_short_idle(r) + "|" + get_tec(r) + "|" + r[173] + "|")

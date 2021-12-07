@@ -16,6 +16,7 @@ struct EnergyStarComputer {
     double longIdleWattage = -1;
     double shortIdleWattage = -1;
     double tecKWH = -1;
+    std::string dateOnMarket;
 };
 
 int energyStarStringHash(std::string str) {
@@ -59,6 +60,8 @@ public:
                         computer.shortIdleWattage = std::stod(data);
                     } else if (field == 7 && !data.empty()) {
                         computer.tecKWH = std::stod(data);
+                    } else if (field == 8) {
+                        computer.dateOnMarket = data;
                     }
                     field++;
                 } else {
@@ -75,10 +78,10 @@ public:
             if (!(output -> exists(computer.brandName))) {
                 auto models = new HashMap<std::string, EnergyStarComputer>(energyStarStringHash, 200);
                 output -> set(computer.brandName, models);
-                models -> set(computer.modelName, computer);
+                models -> set(computer.modelName + " " + computer.dateOnMarket, computer);
             } else {
                 auto models = output -> get(computer.brandName);
-                models -> set(computer.modelName, computer);
+                models -> set(computer.modelName + " " + computer.dateOnMarket, computer);
             }
         }
         return output;

@@ -9,5 +9,6 @@ int main() {
     std::cout << consumptionDB -> exists("Apple") << std::endl;
     EnergyStarDatabaseParser eparser("../data/EnergyStarParsed.csv");
     auto energyDB = parser.getHashMap();
+    std::cout << energyDB -> exists("Apple") << std::endl;
     std::cout << "Hello world" << std::endl;
 }
