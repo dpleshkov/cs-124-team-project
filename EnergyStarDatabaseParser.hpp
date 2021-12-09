@@ -68,7 +68,9 @@ public:
                     buffer.enqueue(c);
                 }
             }
-            computers.push_back(computer);
+            if (computer.type == "Notebook") {
+                computers.push_back(computer);
+            }
         }
     }
 

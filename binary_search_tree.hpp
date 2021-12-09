@@ -2,32 +2,17 @@
 #define BINARY_SEARCH_TREE_H
 
 #include <string>
-
-struct ComputerSuggestion
-{
-	std::string modelName;
-    std::string brandName;
-    std::string modelNumber;
-    std::string type;
-    double sleepWattage = -1;
-    double longIdleWattage = -1;
-    double shortIdleWattage = -1;
-    double tecKWH = -1;
-};
+#include "EnergyStarDatabaseParser.hpp"
 
 class Node
 {
 private:
-   ComputerSuggestion data;
+   EnergyStarComputer data;
    Node* left;
    Node* right;
 friend class BinarySearchTree;   
 };   
 
-/*
-   This class implements a binary search tree whose
-   nodes hold strings.
-*/
 class BinarySearchTree
 {
 public:   
@@ -36,7 +21,7 @@ BinarySearchTree()
    root = nullptr;
 }
    
-void insert(ComputerSuggestion element) 
+void insert(EnergyStarComputer element) 
 {  
    Node* new_node = new Node;
    new_node->data = element;
@@ -53,7 +38,7 @@ void print() const
    std::cout << std::endl;
 }  
 
-ComputerSuggestion find(double element)
+EnergyStarComputer find(double element)
 {
    Node* current = root;
    while (current != nullptr)
@@ -61,42 +46,51 @@ ComputerSuggestion find(double element)
       if (element < current->data.tecKWH && current->left != nullptr)
       {
          current = current->left;
-         //std::cout << "here";
       }
       else if (element > current->data.tecKWH && current->right != nullptr)
       {
          current = current->right;
-         //std::cout << "bam";
       }
       else return current->data;      
    }
    return current->data;
 }
-
-
-private:   
+ 
    void print(Node* parent) const
-{  
-   if (parent == nullptr) { return; }
-   print(parent->left);
-   std::cout << parent->data.modelName << " " << std::endl;
-   print(parent->right);
-}
+    {  
+      if (parent == nullptr) { return; }
+      print(parent->left);
+      std::cout << parent->data.modelName << " " << std::endl;
+      print(parent->right);
+    }
 
    void add_node(Node* parent, Node* new_node) const
-{  
-   if (new_node->data.tecKWH < parent->data.tecKWH)
-   {  
-      if (parent->left == nullptr) { parent->left = new_node; }
-      else { add_node(parent->left, new_node); }
-   }
-   else if (new_node->data.tecKWH > parent->data.tecKWH)
-   {  
-      if (parent->right == nullptr) { parent->right = new_node; }
-      else { add_node(parent->right, new_node); }
-   }
-}
-
+    {  
+      if (new_node->data.tecKWH < parent->data.tecKWH)
+      {  
+          if (parent->left == nullptr) { parent->left = new_node; }
+          else { add_node(parent->left, new_node); }
+      }
+      else if (new_node->data.tecKWH > parent->data.tecKWH)
+      {  
+          if (parent->right == nullptr) { parent->right = new_node; }
+          else { add_node(parent->right, new_node); }
+      }
+    }
+    
+    ~BinarySearchTree()
+    {
+        deleteNodes(this -> root);
+    }
+    // deletes all nodes recursively in post order
+    void deleteNodes(Node *node)
+    {
+      if (node == nullptr) return;
+      deleteNodes(node->left);
+      deleteNodes(node->right);
+      delete node;
+    }
+private:
    Node* root;
 };
 

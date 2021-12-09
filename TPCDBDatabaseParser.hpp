@@ -7,7 +7,7 @@
 #include <sstream>
 #include <vector>
 
-struct Computer {
+struct TPCDBComputer {
     std::string modelName;
     std::string brandName;
     double normalWattage = -1;
@@ -31,7 +31,7 @@ public:
         std::getline(file, line); // skip first line
         while (std::getline(file, line)) {
             Queue<char> buffer;
-            Computer computer;
+            TPCDBComputer computer;
             int field = 0;
             for (char c: line) {
                 if (c == '|') {
@@ -63,11 +63,11 @@ public:
         }
     }
 
-    HashMap<std::string, HashMap<std::string, Computer>*>* getHashMap() {
-        auto output = new HashMap<std::string, HashMap<std::string, Computer>*>(stringHash, 200);
+    HashMap<std::string, HashMap<std::string, TPCDBComputer>*>* getHashMap() {
+        auto output = new HashMap<std::string, HashMap<std::string, TPCDBComputer>*>(stringHash, 200);
         for (const auto& computer : computers) {
             if (!(output -> exists(computer.brandName))) {
-                auto models = new HashMap<std::string, Computer>(stringHash, 200);
+                auto models = new HashMap<std::string, TPCDBComputer>(stringHash, 200);
                 output -> set(computer.brandName, models);
                 models -> set(computer.modelName, computer);
             } else {
@@ -79,7 +79,7 @@ public:
     }
 
 private:
-    std::vector<Computer> computers;
+    std::vector<TPCDBComputer> computers;
 };
 
 #endif

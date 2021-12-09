@@ -1,0 +1,148 @@
+#include <iostream>
+#include <vector>
+#include "TPCDBDatabaseParser.hpp"
+#include "EnergyStarDatabaseParser.hpp"
+#include "binary_search_tree.hpp"
+#include "Search.hpp"
+#include "Interface.cpp"
+#include "stateInfo.hpp"
+
+int main() {
+  //ask the user to repeat
+  // coal gas oil
+  greeting(); 
+  //State states[50];
+  /*
+  State AL ("Alabama", 0.19, 0.4, 0);
+  State AK ("Alaska", 0.11, 0.5, 0.14);
+  State AZ ("Arizona", 0.2, 0.4, 0);
+  State AR ("Arkansas", 0.38, 0.33, 0);
+  State CA ("California", 0, 0.39, 0);
+  State CO ("Colorado", 0.44, 0.3, 0);
+  State CT ("Connecticut", 0.01, 0.52, 0.01);
+  State DE ("Delaware", 0.05, 0.89, 0.02);
+  State FL ("Florida", 0.09, 0.74, 0.01);
+  State GA ("Georgia", 0.2, 0.45, 0);
+  State HI ("Hawaii", 012, 0, 0.62);
+  State ID ("Idaho", 0, 0.21, 0);
+  State IL ("Illinois", 0.27, 0.1, 0);
+  State IN ("Indiana", 0.59, 0.31, 0);
+  State IA ("Iowa", 0.35, 0.13, 0);
+  State KS ("Kansas", 0.33, 0.7, 0);
+  State KY ("Kentucky", 0.73, 0.21, 0);
+  State LA ("Louisiana", 0.07, 0.69, 0.03);
+  State ME ("Maine", 0.01, 0.16, 0.01);
+  State MD ("Maryland", 0.14, 0.37, 0.01);
+  State MA ("Massachusetts", 0, 0.64, 0);
+  State MI ("Michigan", 0.32, 0.29, 0.01);
+  State MN ("Minnesota", 0.31, 0.18, 0);
+  State MS ("Mississippi", 0.07, 0.74, 0);
+  State MO ("Missouri", 0.73, 0.1, 0);
+  State MT ("Montana", 0.52, 0.02, 0.02);
+  State NE ("Nebraska", 0.55, 0.03, 0);
+  State NV ("Nevada", 0.07, 0.64, 0);
+  State NH ("New Hampshire", 0.02, 0.2, 0);
+  State NJ ("New Jersey", 0.01, 0.55, 0);
+  State NM ("New Mexico", 0.41, 0.34, 0);
+  State NY ("New York", 0, 0.37, 0.01);
+  State NC ("North Carolina", 0.23, 0.32, 0);
+  State ND ("Norh Dakota", 0.63, 0.03, 0);
+  State OH ("Ohio", 0.39, 0.43, 0);
+  State OK ("Oklahoma", 0.09, 0.53, 0);
+  State OR ("Oregon", 0.02, 0.34, 0);
+  State PA ("Pennsylvania", 0.17, 0.42, 0);
+  State RI ("Rhode Island", 0, 0.91, 0);
+  State SC ("Sout Carolina", 0.15, 0.24, 0);
+  State SD ("South Dakota", 0.21, 0.11, 0);
+  State TN ("Tennessee", 0.23, 0.2, 0);
+  State TX ("Texas", 0.19, 0.53, 0);
+  State UT ("Utah", 0.64, 0.24, 0);
+  State VT ("Vermont", 0,0.001,0);
+  State VA ("Virginia", 0.02, 0.59, 0);
+  State WA ("Washington", 0.07, 0.13, 0);
+  State WV ("West Virginia", 0.91, 0.01, 0);
+  State WI ("Wisconsin", 0.42, 0.34, 0);
+  State WY ("Wyoming", 0.84, 0.01, 0);
+  
+  states.push_back(AL);*/
+ 
+  int userInput;
+  do{
+      std::cout << "Type 1 to start program or 2 to exit:" << std::endl;
+      std::cin >> userInput;
+      switch(userInput){
+        case 1:{
+          std::cin.ignore(1000,'\n');
+          TPCDBComputer comp;
+          TPCDBDatabaseParser parser("data/tpcdb.csv");
+          auto consumptionDB = parser.getHashMap();
+          //std::cout << consumptionDB -> exists("Apple") << std::endl;
+          EnergyStarDatabaseParser eparser("./data/EnergyStarParsed.csv");
+          auto energyDB = eparser.getHashMap();
+          //std::cout << energyDB -> exists("Apple") << std::endl;
+          /*auto computer = findEnergyStarComputer(energyDB);
+          std::cout << "Your computer's brand is " << computer.brandName << std::endl;*/
+          auto tpc = findTPCDBComputer(consumptionDB);
+          std::cout << "Your computer's max wattage is " << tpc.normalWattage << std::endl;
+
+
+          BinarySearchTree recommender;
+
+          for (auto brandName : energyDB -> getKeys()) {
+              auto models = energyDB -> get(brandName);
+              for (auto modelName : models -> getKeys()) {
+                  EnergyStarComputer computer = models -> get(modelName);
+                  if (computer.type == "Notebook") {
+                      recommender.insert(computer);
+                  }
+              }
+          }
+        
+        int num=0;
+        std::cout << "\nEnter a number: ";
+        std::cin >> num;
+        double maxRange = recommender.find(1000).tecKWH;
+        double minRange = recommender.find(-1).tecKWH;
+        while(!std::cin.fail())
+        {
+          //std::cout << "Laptops below your kwh: ";
+          for(int i=0;i<10;i++)
+          {
+          
+          if(num > maxRange)
+          {
+            num = maxRange;
+          }
+          else if(num < minRange)
+          {
+            num = minRange;
+          }
+          //std::cout << num << "\n";
+          auto test = recommender.find(num);
+          if(test.tecKWH != -1)
+          {
+            std::cout << test.modelName << " " << test.dateOnMarket<<" TEC KWH: " << test.tecKWH << "\n";
+            num -= 5;
+          }
+          
+        }
+          std::cout << "\nEnter a number: ";
+          std::cin >> num;
+        }
+        break;
+      }
+
+      //exit program:
+      case 2:{
+          std::cout << "Exiting Program." << std::endl;
+          return 0;
+          break;
+      }
+
+      default:{
+        std::cout << "You have entered an invalid response. Please try again." << std::endl;
+        break;
+      }
+    }
+  }while(userInput != 'q');
+}

@@ -1,262 +1,260 @@
-Brand|Model|Normal|Standby|Max
-Dell|FX170 thin client|9.50|12.00]0;C:\Python39\python.exe
-Minisforum|UM250|24.50|6.50|38.70
+Dell|FX170 thin client|9.50|12.00|
+Minisforum|UM250|24.50|6.50|38.70|
 Raspberry Pi|4B + PoE + SD|3.20|2.90|
-Intel|NUC7i3BNH|6.20|2.00|28.40
-Intel|NUC10i5FNK|6.60|0.50|61.30
-Intel|NUC8i5BEH|5.10|0.30|75.80
-Intel|NUC8i3BEH|5.50|0.30|48.20
-Intel|NUC7CJYH|5.00|0.60|16.20
-Intel|NUC7CJYH|7.20|24.10
-Intel|NUC7CJYH|4.50|0.80|21.40
-Apple|Mac Mini (2009 late) 2.53 GHz Core 2 Duo (Macmini3,1)|20.00|6.00|47.00
-HP|EliteDesk 800 G2 DM 35W (P1G34EA#UUW)|8.00|37.00
+Intel|NUC7i3BNH|6.20|2.00|28.40|
+Intel|NUC10i5FNK|6.60|0.50|61.30|
+Intel|NUC8i5BEH|5.10|0.30|75.80|
+Intel|NUC8i3BEH|5.50|0.30|48.20|
+Intel|NUC7CJYH|5.00|0.60|16.20|
+Intel|NUC7CJYH|7.20|24.10|
+Intel|NUC7CJYH|4.50|0.80|21.40|
+Apple|Mac Mini (2009 late) 2.53 GHz Core 2 Duo (Macmini3,1)|20.00|6.00|47.00|
+HP|EliteDesk 800 G2 DM 35W (P1G34EA#UUW)|8.00|37.00|
 Commodore|C64|20.00|3.00|
-Acer|v3-572 Laptop|18.50|5.90|24.60
-Intel|NUC5CPYH|4.50|0.90|18.70
-Intel|Cherry Trail Compute Stick|2.45|8.82
-Intel|NUC6CAYH|9.33|25.78
-Gigabyte|BRIX GB-BXBT-1900|4.00|8.00
-Gigabyte|BRIX GB-BXBT-1900|5.79|17.28
-Raspberry Pi|3|2.10|5.90
-Raspberry Pi|3b+|2.90|6.40
-Raspberry Pi|4b|4.60|7.60
-Apple|Mac mini (Late 2018) 230v|11.50|1.19|150.00
-Apple|Mac mini (Late 2014) all i5 models|6.00|85.00
-Apple|2019 27" i7 iMac Vega GPU|55.00|3.00|250.00
-Intel|NUC5CPYH|8.50|1.30|12.00
+Acer|v3-572 Laptop|18.50|5.90|24.60|
+Intel|NUC5CPYH|4.50|0.90|18.70|
+Intel|Cherry Trail Compute Stick|2.45|8.82|
+Intel|NUC6CAYH|9.33|25.78|
+Gigabyte|BRIX GB-BXBT-1900|4.00|8.00|
+Gigabyte|BRIX GB-BXBT-1900|5.79|17.28|
+Raspberry Pi|3|2.10|5.90|
+Raspberry Pi|3b+|2.90|6.40|
+Raspberry Pi|4b|4.60|7.60|
+Apple|Mac mini (Late 2018) 230v|11.50|1.19|150.00|
+Apple|Mac mini (Late 2014) all i5 models|6.00|85.00|
+Apple|2019 27" i7 iMac Vega GPU|55.00|3.00|250.00|
+Intel|NUC5CPYH|8.50|1.30|12.00|
 Intel|NUC5i3RYH|7.30|0.80|
 Raspberry Pi|Raspberry Pi Zero|0.40|
-Raspberry Pi|Raspberry Pi 3 B+|1.90|0.10|5.10
-Raspberry Pi|Raspberry Pi 3 B|1.40|0.10|3.70
-Raspberry Pi|Raspberry Pi 2 B|1.10|0.10|2.10
+Raspberry Pi|Raspberry Pi 3 B+|1.90|0.10|5.10|
+Raspberry Pi|Raspberry Pi 3 B|1.40|0.10|3.70|
+Raspberry Pi|Raspberry Pi 2 B|1.10|0.10|2.10|
 Intel|BOXNUC5CPYH|8.12|1.55|
-Intel|DC53427HYE|18.00|2.00|32.00
-Apple|Apple Macbook Pro Retina 13 inch mid 2014|63.10|64.10
-Alienware|17 inch r4 2017|140.00|240.00
-Intel|NUC7JY NUC7PJYH|4.49|1.13|24.58
-Raspberry Pi|Zero W|0.60|0.80
+Intel|DC53427HYE|18.00|2.00|32.00|
+Apple|Apple Macbook Pro Retina 13 inch mid 2014|63.10|64.10|
+Alienware|17 inch r4 2017|140.00|240.00|
+Intel|NUC7JY NUC7PJYH|4.49|1.13|24.58|
+Raspberry Pi|Zero W|0.60|0.80|
 Apple|MacBook Pro (2016), 15"|4.15|0.56|
 Apple|MacBook Pro (2016), 13"|2.94|0.48|
 Apple|MacBook (2016), 12"|5.54|0.32|
-Apple|iMac (2017), 27", 4.2 GHz i7|71.00|217.00
-Apple|iMac (2017), 21.5", 3.6 GHz i7|49.00|161.00
-Apple|iMac (2017), 21.5", 2.3 GHz i5|33.00|74.00
-Apple|iMac (2015), 27", 4.0 GHz i7|63.00|240.00
-Apple|iMac (2015), 21.5", 3.3 GHz i7|40.00|119.00
-Apple|iMac (2015), 21.5", 1.6 GHz i5|33.00|58.00
-Apple|iMac (2015), 27", 3.3 GHz i5|70.00|197.00
-Apple|Mac Mini (2005) 1.25 GHz PowerPC G4 (M9686LL/A*)|32.00|85.00
-Apple|Mac Mini (2009) 2 GHz Core 2 Duo|13.00|110.00
-Apple|Mac Mini (2009) 2.53 GHz Core 2 Duo Server|15.00|110.00
-Apple|Mac Mini (2009) 2.26 GHz or 2.53 GHz|14.00|110.00
-Apple|Mac Mini (2010) 2.66 GHz Core 2 Duo Server|11.00|85.00
-Apple|Mac Mini (2011) 2 GHz i7 Server|12.00|85.00
-Apple|Mac Mini (2011) 2.3 GHz i5|11.00|85.00
-Apple|Mac Mini (2011) 2.7 GHz i7|14.00|85.00
-Apple|Mac Mini (2011) 2.5 GHz i5|14.00|85.00
-Apple|Mac Mini (2012) 2.3 GHz i7|11.00|85.00
-Apple|Mac Mini (2012) 2.5 GHz i5|11.00|85.00
-HP|Dx2400|55.00|1.70|80.00
-Intel|NUC6i3SYK/H|5.80|0.50|23.50
-Intel|NUC6i5SYK/H|8.40|0.50|29.90
-Asrock|Beebox N3150|6.80|1.00|15.00
-Asrock|Beebox N3000|7.40|1.10|12.80
-Intel|NUC5PPYH|6.40|0.70|13.80
-Zotac|ZBOX nano CI521|7.00|0.80|20.50
-Intel|NUC6i7KYK|20.00|0.80|84.00
-Zotac|ZBOX CI545 nano|11.80|0.80|36.60
-Asrock|DeskMini 110|11.20|0.40|55.00
-Intel|NUC5i3RYK/H|7.10|0.40|21.60
-Intel|DN2820FYKH|5.00|0.30|10.00
-Intel|NUC5CPYH|6.30|0.90|11.00
-Foxconn|Nettop nT-510|3.89|0.88|4.22
+Apple|iMac (2017), 27", 4.2 GHz i7|71.00|217.00|
+Apple|iMac (2017), 21.5", 3.6 GHz i7|49.00|161.00|
+Apple|iMac (2017), 21.5", 2.3 GHz i5|33.00|74.00|
+Apple|iMac (2015), 27", 4.0 GHz i7|63.00|240.00|
+Apple|iMac (2015), 21.5", 3.3 GHz i7|40.00|119.00|
+Apple|iMac (2015), 21.5", 1.6 GHz i5|33.00|58.00|
+Apple|iMac (2015), 27", 3.3 GHz i5|70.00|197.00|
+Apple|Mac Mini (2005) 1.25 GHz PowerPC G4 (M9686LL/A*)|32.00|85.00|
+Apple|Mac Mini (2009) 2 GHz Core 2 Duo|13.00|110.00|
+Apple|Mac Mini (2009) 2.53 GHz Core 2 Duo Server|15.00|110.00|
+Apple|Mac Mini (2009) 2.26 GHz or 2.53 GHz|14.00|110.00|
+Apple|Mac Mini (2010) 2.66 GHz Core 2 Duo Server|11.00|85.00|
+Apple|Mac Mini (2011) 2 GHz i7 Server|12.00|85.00|
+Apple|Mac Mini (2011) 2.3 GHz i5|11.00|85.00|
+Apple|Mac Mini (2011) 2.7 GHz i7|14.00|85.00|
+Apple|Mac Mini (2011) 2.5 GHz i5|14.00|85.00|
+Apple|Mac Mini (2012) 2.3 GHz i7|11.00|85.00|
+Apple|Mac Mini (2012) 2.5 GHz i5|11.00|85.00|
+HP|Dx2400|55.00|1.70|80.00|
+Intel|NUC6i3SYK/H|5.80|0.50|23.50|
+Intel|NUC6i5SYK/H|8.40|0.50|29.90|
+Asrock|Beebox N3150|6.80|1.00|15.00|
+Asrock|Beebox N3000|7.40|1.10|12.80|
+Intel|NUC5PPYH|6.40|0.70|13.80|
+Zotac|ZBOX nano CI521|7.00|0.80|20.50|
+Intel|NUC6i7KYK|20.00|0.80|84.00|
+Zotac|ZBOX CI545 nano|11.80|0.80|36.60|
+Asrock|DeskMini 110|11.20|0.40|55.00|
+Intel|NUC5i3RYK/H|7.10|0.40|21.60|
+Intel|DN2820FYKH|5.00|0.30|10.00|
+Intel|NUC5CPYH|6.30|0.90|11.00|
+Foxconn|Nettop nT-510|3.89|0.88|4.22|
 Intel|DE3815TYKHE|5.02|0.34|
-Raspberry Pi|Pi 2|2.45|3.85
-Raspberry Pi|Pi 3|2.21|3.62
-Supermicro|A1SAi-2750F|24.00|46.00
+Raspberry Pi|Pi 2|2.45|3.85|
+Raspberry Pi|Pi 3|2.21|3.62|
+Supermicro|A1SAi-2750F|24.00|46.00|
 Asrock|C236 WSI|15.00|2.20|
 Asrock|C2750D4I|40.20|4.40|
 Asrock|C2750D4I|42.30|4.40|
-Asrock|C2750D4I|40.50|4.40|48.80
-Supermicro|A1SAi-2750F|17.00|30.00
+Asrock|C2750D4I|40.50|4.40|48.80|
+Supermicro|A1SAi-2750F|17.00|30.00|
 Asrock|C2750D4I|36.00|4.00|
-Asrock|C2750D4I|22.80|36.40
-Asrock|C2550D4I|22.80|30.70
-Intel|NUC6i3SYK|5.80|0.50|23.50
-Intel|NUC5i5RYK|6.80|37.80
-Intel|NUC5i3RYK|6.40|0.50|36.00
+Asrock|C2750D4I|22.80|36.40|
+Asrock|C2550D4I|22.80|30.70|
+Intel|NUC6i3SYK|5.80|0.50|23.50|
+Intel|NUC5i5RYK|6.80|37.80|
+Intel|NUC5i3RYK|6.40|0.50|36.00|
 CompuLab|fitlet-H Barebone|6.90|
-Intel|NUC6i5SYK|7.31|48.00
-Intel|NUC6i3SYH|7.10|0.40|34.10
-Intel|NUC5i3RYK|7.10|0.40|21.60
-Intel|NUC6i3SYH|5.80|0.50|23.50
-MSI|N3150I ECO|12.10|1.05|30.00
+Intel|NUC6i5SYK|7.31|48.00|
+Intel|NUC6i3SYH|7.10|0.40|34.10|
+Intel|NUC5i3RYK|7.10|0.40|21.60|
+Intel|NUC6i3SYH|5.80|0.50|23.50|
+MSI|N3150I ECO|12.10|1.05|30.00|
 Odroid|U2|2.90|
-MSI|N3150I ECO|12.70|1.05|30.00
-MSI|N3150I ECO|13.85|1.05|14.50
-OKI|OKINB0508|24.00|59.00
-CompuLab|fit-PC4 Value|5.00|11.00
-CompuLab|fitlet-H Barebone|4.50|10.50
+MSI|N3150I ECO|12.70|1.05|30.00|
+MSI|N3150I ECO|13.85|1.05|14.50|
+OKI|OKINB0508|24.00|59.00|
+CompuLab|fit-PC4 Value|5.00|11.00|
+CompuLab|fitlet-H Barebone|4.50|10.50|
 PC-Engines|APU1C|8.60|
-Apple|iMac (2014), 21.5" (ME086, ME087, MF883)|37.70|0.21|68.00
+Apple|iMac (2014), 21.5" (ME086, ME087, MF883)|37.70|0.21|68.00|
 Apple|iMac (2013), 27" (ME088, ME089)|79.10|0.24|
-Apple|iMac (2014), 27" Retina, 3.5GHz|70.40|0.24|176.00
-Apple|iMac (2014), 27" Retina, 4GHz|70.40|0.24|288.00
-Apple|Mac Mini (2014), (MGEM2, MGEN2, MGEQ2)|5.80|0.29|85.00
+Apple|iMac (2014), 27" Retina, 3.5GHz|70.40|0.24|176.00|
+Apple|iMac (2014), 27" Retina, 4GHz|70.40|0.24|288.00|
+Apple|Mac Mini (2014), (MGEM2, MGEN2, MGEQ2)|5.80|0.29|85.00|
 Apple|Mac Pro (2013), (ME253, MD878)|43.00|0.26|
-Apple|MacBook (2015), 12" (MF855, MJY32, MK4M2, MF865, MJY42, MK4N2)|6.10|0.10|
-9.00
-Apple|MacBook Air (2015), 11" (MJVM2, MJVP2)|5.40|0.24|45.00
-Apple|MacBook Air (2015), 13" (MJEV2, MJVG2)|5.90|0.24|45.00
-Apple|MacBook Pro (2012), 13" (MD101, MD102)|12.00|0.31|60.00
-Apple|MacBook Pro (2015), 13", Retina (MF839, MF840, MF841)|8.60|0.30|60.00
-Apple|MacBook Pro (2015), 15", Retina (MJLQ2, MJLT2)|12.70|0.30|85.00
-Zotac|ZBOX CI540 nano|7.63|24.13
-Zotac|Zbox CI320 Nano|8.23|19.33
-ECS|LIVA X|3.41|12.65
-ECS|LIVA mini-PC|3.87|12.05
-Intel|NUC5i7RYH|7.99|44.54
-Intel|PPSTCK1A32WFC|2.45|8.82
-Biostar|NM70I-847|18.00|1.80|28.00
-Asus|E45M1-M PRO|17.00|1.80|32.00
-Zotac|D2550-ITX WiFi|21.00|2.00|29.00
-MSI|C847MS-E33|16.00|1.70|26.00
+Apple|MacBook (2015), 12" (MF855, MJY32, MK4M2, MF865, MJY42, MK4N2)|6.10|0.10|29.00|
+Apple|MacBook Air (2015), 11" (MJVM2, MJVP2)|5.40|0.24|45.00|
+Apple|MacBook Air (2015), 13" (MJEV2, MJVG2)|5.90|0.24|45.00|
+Apple|MacBook Pro (2012), 13" (MD101, MD102)|12.00|0.31|60.00|
+Apple|MacBook Pro (2015), 13", Retina (MF839, MF840, MF841)|8.60|0.30|60.00|
+Apple|MacBook Pro (2015), 15", Retina (MJLQ2, MJLT2)|12.70|0.30|85.00|
+Zotac|ZBOX CI540 nano|7.63|24.13|
+Zotac|Zbox CI320 Nano|8.23|19.33|
+ECS|LIVA X|3.41|12.65|
+ECS|LIVA mini-PC|3.87|12.05|
+Intel|NUC5i7RYH|7.99|44.54|
+Intel|PPSTCK1A32WFC|2.45|8.82|
+Biostar|NM70I-847|18.00|1.80|28.00|
+Asus|E45M1-M PRO|17.00|1.80|32.00|
+Zotac|D2550-ITX WiFi|21.00|2.00|29.00|
+MSI|C847MS-E33|16.00|1.70|26.00|
 Asus|H81M-Plus|10.30|72.00|
-Gigabyte|MW50-SV0|47.00|4.70|221.00
-Gigabyte|GA-X99 Gaming 5|48.00|5.70|202.00
-MSI|X99S SLI Plus|54.00|6.30|226.00
-Asus|X99-Deluxe|53.00|4.20|223.00
-Asrock|X99 Extreme4|40.00|2.50|241.00
-Asrock|Fatal1ty X99M Killer|41.00|2.20|243.00
-Fujitsu|Esprimo X923|21.70|0.80|61.00
-Dell|Optiplex 9020|10.20|1.30|57.00
-Intel|DE3815TYKHE|4.90|0.70|11.80
+Gigabyte|MW50-SV0|47.00|4.70|221.00|
+Gigabyte|GA-X99 Gaming 5|48.00|5.70|202.00|
+MSI|X99S SLI Plus|54.00|6.30|226.00|
+Asus|X99-Deluxe|53.00|4.20|223.00|
+Asrock|X99 Extreme4|40.00|2.50|241.00|
+Asrock|Fatal1ty X99M Killer|41.00|2.20|243.00|
+Fujitsu|Esprimo X923|21.70|0.80|61.00|
+Dell|Optiplex 9020|10.20|1.30|57.00|
+Intel|DE3815TYKHE|4.90|0.70|11.80|
 Orbsmart|S82|5.50|0.60|
 SolidRun|Cubox-i4Pro|7.00|2.50|
 Minix|Neo X7|5.80|1.80|
 Raspberry Pi|B, 512MB|4.40|0.90|
 Intel|D34010WYK|9.40|0.50|
 Intel|DN2820FYKH|8.10|0.40|
-Zotac|Zbox CI320 Nano|8.30|0.40|21.00
+Zotac|Zbox CI320 Nano|8.30|0.40|21.00|
 MSI|B85M Eco|12.30|
 MSI|B85M Eco|17.10|
 Fujitsu|Esprimo P420 E85+|13.30|
-Intel|DN2820FYKH|5.70|1.40|15.10
-Apple|MD711D/B|6.60|25.90
-Asrock|H81M-VG4 P1.30|19.90|21.70
-MSI|H81M-P33 V1.4|13.00|21.20
-Asus|H81M-A 0909|12.40|20.40
+Intel|DN2820FYKH|5.70|1.40|15.10|
+Apple|MD711D/B|6.60|25.90|
+Asrock|H81M-VG4 P1.30|19.90|21.70|
+MSI|H81M-P33 V1.4|13.00|21.20|
+Asus|H81M-A 0909|12.40|20.40|
 Gigabyte Technology Co., Ltd.|H81M-H F5|19.60|
 Apple|MD760LL/A|6.00|0.78|
 Asrock|H81 Pro BTC + G1820|11.60|
-Asrock|H81 Pro BTC + G1820|16.30|1.40|32.30
-Intel|NUC DN2820FYKH|4.60|11.60
-Apple|iMac (2014), 21.5", 1.4GHz Core i5|33.00|0.10|68.00
-Apple|iMac (2009), 21.5", 3.06GHz Core 2 Duo|84.00|0.80|119.00
-Apple|Mac Pro (2006), 2.66GHz Quad Core|171.00|250.00
-Apple|Mac Pro (2008), 2.8GHz 8-Core|155.00|318.00
-Apple|Mac Pro (2009), 2.26GHz 8-Core|146.00|309.00
-Apple|Mac Pro (2009), 2.66GHz Quad Core|115.00|263.00
-Apple|Mac Pro (2010), 2.66GHz 12-Core|145.00|288.00
-Apple|Mac Pro (2010), 2.4GHz 8-Core|162.00|248.00
-Apple|Mac Pro (2010), 2.8GHz Quad Core|125.00|218.00
-Apple|Mac Pro (2013), 2.7GHz 12-Core|44.00|270.00
-Apple|Mac Pro (2013), 3.5GHz 6-Core|43.00|238.00
-Apple|Mac Pro (2013), 3.7GHz Quad Core|43.00|205.00
-Apple|iMac (2009), 24", 3.06GHz Core 2 Duo, Radeon|125.50|215.70
-Apple|iMac (2009), 24", 3.06GHz Core 2 Duo, NVIDIA|113.90|208.90
-Apple|iMac (2009), 24", 2.93GHz Core 2 Duo|116.40|192.20
-Apple|iMac (2009), 24", 2.66GHz Core 2 Duo|104.40|151.50
-Apple|iMac (2009), 20", 2.66GHz Core 2 Duo|60.70|108.90
-Apple|iMac (2009), 27", 2.66GHz Quad Core i5|145.00|365.00
-Apple|iMac (2009), 21.5", 3.2GHz Core i3|104.00|241.00
-Apple|iMac (2009), 21.5", 3.33GHz Core 2 Duo|104.00|241.00
-Apple|iMac (2010), 27", 3.6GHz i5|145.00|365.00
-Apple|iMac (2010), 21.5", 3.6GHz i5|94.00|241.00
-Apple|iMac (2011), 27", 3.4GHz i7|142.00|200.00
-Apple|iMac (2011), 27", 3.1GHz i5|139.00|195.00
-Apple|iMac (2011), 27", 2.7GHz i5|135.00|170.00
-Apple|iMac (2011), 21.5", 2.7GHz i5|85.00|114.00
-Apple|iMac (2011), 21.5", 2.5GHz i5|81.00|106.00
-Apple|iMac (2011), 21.5", 3.1GHz i3|80.00|101.00
-Apple|iMac (2013), 27", 3.2GHz i5|78.00|180.00
-Apple|iMac (2013), 27", 3.4GHz i5|80.00|214.00
-Apple|iMac (2013), 27", 3.4GHz i7|78.00|229.00
-Apple|iMac (2013), 21.5", 2.7GHz i5|38.00|91.00
-Apple|iMac (2013), 21.5", 2.9GHz i5|37.00|94.00
-Apple|iMac (2013), 21.5", 3.1GHz i7|37.00|136.00
+Asrock|H81 Pro BTC + G1820|16.30|1.40|32.30|
+Intel|NUC DN2820FYKH|4.60|11.60|
+Apple|iMac (2014), 21.5", 1.4GHz Core i5|33.00|0.10|68.00|
+Apple|iMac (2009), 21.5", 3.06GHz Core 2 Duo|84.00|0.80|119.00|
+Apple|Mac Pro (2006), 2.66GHz Quad Core|171.00|250.00|
+Apple|Mac Pro (2008), 2.8GHz 8-Core|155.00|318.00|
+Apple|Mac Pro (2009), 2.26GHz 8-Core|146.00|309.00|
+Apple|Mac Pro (2009), 2.66GHz Quad Core|115.00|263.00|
+Apple|Mac Pro (2010), 2.66GHz 12-Core|145.00|288.00|
+Apple|Mac Pro (2010), 2.4GHz 8-Core|162.00|248.00|
+Apple|Mac Pro (2010), 2.8GHz Quad Core|125.00|218.00|
+Apple|Mac Pro (2013), 2.7GHz 12-Core|44.00|270.00|
+Apple|Mac Pro (2013), 3.5GHz 6-Core|43.00|238.00|
+Apple|Mac Pro (2013), 3.7GHz Quad Core|43.00|205.00|
+Apple|iMac (2009), 24", 3.06GHz Core 2 Duo, Radeon|125.50|215.70|
+Apple|iMac (2009), 24", 3.06GHz Core 2 Duo, NVIDIA|113.90|208.90|
+Apple|iMac (2009), 24", 2.93GHz Core 2 Duo|116.40|192.20|
+Apple|iMac (2009), 24", 2.66GHz Core 2 Duo|104.40|151.50|
+Apple|iMac (2009), 20", 2.66GHz Core 2 Duo|60.70|108.90|
+Apple|iMac (2009), 27", 2.66GHz Quad Core i5|145.00|365.00|
+Apple|iMac (2009), 21.5", 3.2GHz Core i3|104.00|241.00|
+Apple|iMac (2009), 21.5", 3.33GHz Core 2 Duo|104.00|241.00|
+Apple|iMac (2010), 27", 3.6GHz i5|145.00|365.00|
+Apple|iMac (2010), 21.5", 3.6GHz i5|94.00|241.00|
+Apple|iMac (2011), 27", 3.4GHz i7|142.00|200.00|
+Apple|iMac (2011), 27", 3.1GHz i5|139.00|195.00|
+Apple|iMac (2011), 27", 2.7GHz i5|135.00|170.00|
+Apple|iMac (2011), 21.5", 2.7GHz i5|85.00|114.00|
+Apple|iMac (2011), 21.5", 2.5GHz i5|81.00|106.00|
+Apple|iMac (2011), 21.5", 3.1GHz i3|80.00|101.00|
+Apple|iMac (2013), 27", 3.2GHz i5|78.00|180.00|
+Apple|iMac (2013), 27", 3.4GHz i5|80.00|214.00|
+Apple|iMac (2013), 27", 3.4GHz i7|78.00|229.00|
+Apple|iMac (2013), 21.5", 2.7GHz i5|38.00|91.00|
+Apple|iMac (2013), 21.5", 2.9GHz i5|37.00|94.00|
+Apple|iMac (2013), 21.5", 3.1GHz i7|37.00|136.00|
 ViewSonic|ViewPad 10|7.50|
-CompuLab|Intense PC2|6.00|24.00
+CompuLab|Intense PC2|6.00|24.00|
 Intel|DQ77KB + i3 3225|7.10|
-Highpoint|Rocket 640L|5.00|5.00|5.00
+Highpoint|Rocket 640L|5.00|5.00|5.00|
 Asus|H87M-PRO|19.00|0.30|
 Intel|D54250WYK|4.60|0.05|
 Intel|D54250WYK|3.65|0.05|
-Intel|DC3217BY|5.05|26.10
-Intel|DC3217BY|11.55|1.25|13.50
-Intel|DC3217BY|11.75|1.25|12.70
-Intel|NUC DC53427HYE|8.50|24.50
+Intel|DC3217BY|5.05|26.10|
+Intel|DC3217BY|11.55|1.25|13.50|
+Intel|DC3217BY|11.75|1.25|12.70|
+Intel|NUC DC53427HYE|8.50|24.50|
 Intel|D54250WYK|4.60|
-Intel|D54250WYK|6.00|37.00
+Intel|D54250WYK|6.00|37.00|
 Intel|DH61AG + Celeron G1610|10.00|
-ASRock|Q77M vPro|19.70|60.20
-E. Nijssen|Fluffy 2: modified Intel DQ77KB + i5-3570K|5.90|74.50
-ASRock|Z87E-ITX + i7-4765T|25.94|1.38|85.68
-Supermicro|X10SAT + Intel Core i7 4771|40.00|115.00
+ASRock|Q77M vPro|19.70|60.20|
+E. Nijssen|Fluffy 2: modified Intel DQ77KB + i5-3570K|5.90|74.50|
+ASRock|Z87E-ITX + i7-4765T|25.94|1.38|85.68|
+Supermicro|X10SAT + Intel Core i7 4771|40.00|115.00|
 Intel|D54250WYK|3.70|
-Intel|D54250WYK|4.60|25.20
-Raspberry Pi|B, rev 2 (512MB RAM)|2.90|3.80
-Asus|K53E|15.80|55.10
+Intel|D54250WYK|4.60|25.20|
+Raspberry Pi|B, rev 2 (512MB RAM)|2.90|3.80|
+Asus|K53E|15.80|55.10|
 Apple|500 GB Mac Mini (MC815*/A)|13.00|1.16|
-Alienware|X51 R2 Desktop Gaming System|44.00|211.00
-Intel|NUC D54250WYK|4.60|25.20
-HP|648255-421|45.00|13.00|73.00
-HP|648255-421|39.50|10.50|69.00
-HP|648255-421|41.00|10.50|68.00
-HP|DL380 G6 L5520 4GB 460W|68.70|106.20
+Alienware|X51 R2 Desktop Gaming System|44.00|211.00|
+Intel|NUC D54250WYK|4.60|25.20|
+HP|648255-421|45.00|13.00|73.00|
+HP|648255-421|39.50|10.50|69.00|
+HP|648255-421|41.00|10.50|68.00|
+HP|DL380 G6 L5520 4GB 460W|68.70|106.20|
 Foxconn|R10-D2|32.00|
-Intel|DC3217IYE|13.95|2.05|20.90
+Intel|DC3217IYE|13.95|2.05|20.90|
 Foxconn|Nettop nT-A3500|24.00|
-SuperMicro|X8SI6-F + L3406|46.00|64.00
+SuperMicro|X8SI6-F + L3406|46.00|64.00|
 Compaq|Proliant DL360 G1|91.00|21.50|
-Intel|DC3217IYE|11.40|1.95|23.20
+Intel|DC3217IYE|11.40|1.95|23.20|
 Intel|NUC DC3217IYE|9.80|
-CompuLab|fit-PC2|6.00|0.50|8.00
-Compulab|Intense PC|10.00|26.00
-Apple|iMac 24" 2.8GHz Core2 Duo|134.00|0.50|161.00
-Asus|1201PN EEE PC|17.00|0.50|23.00
-Sapphire|Edge-HD|21.00|36.00
-Sapphire|Edge-HD|21.00|1.50|32.40
-VIA|ARTiGO A1100|12.84|20.72
+CompuLab|fit-PC2|6.00|0.50|8.00|
+Compulab|Intense PC|10.00|26.00|
+Apple|iMac 24" 2.8GHz Core2 Duo|134.00|0.50|161.00|
+Asus|1201PN EEE PC|17.00|0.50|23.00|
+Sapphire|Edge-HD|21.00|36.00|
+Sapphire|Edge-HD|21.00|1.50|32.40|
+VIA|ARTiGO A1100|12.84|20.72|
 Apple|Mac Mini 2.4GHz MC270*/A MC438*/A|10.00|
 Apple|Mac Mini 1.83 GHz (MB138*/A)|23.00|
 Apple|Mac Mini 1.83 GHz Core Duo (MA608*/A)|23.00|
 Apple|Mac Mini 1.5 GHz Core Solo (MA205*/A)|23.00|
-Evo technologies, Inc.|ECOPC N.1|10.00|18.00
+Evo technologies, Inc.|ECOPC N.1|10.00|18.00|
 GuruPlug|GuruPlug-Server Standard|5.00|
 Asus|Eee Box PC B201|20.00|
-Giada|Slim-N10 NVIDIA Ion Nettop|20.00|26.00
-Apple|320 GB Mac Mini (MB464*/A)|15.00|34.00
+Giada|Slim-N10 NVIDIA Ion Nettop|20.00|26.00|
+Apple|320 GB Mac Mini (MB464*/A)|15.00|34.00|
 Asus|Eee Box PC EB1007|40.00|
 Tranquil|T7-D|15.00|
 Tranquil|T2-D|15.00|
-Tranquil|T7-330|27.00|31.00
+Tranquil|T7-330|27.00|31.00|
 VeryPC|BroadLeaf BL32-B-E53|31.38|
-Fujitsu|FUTRO S100|10.00|0.96|11.00
-CompuLab|fit-PC2|5.00|9.00
-Aleutia|U6 Userful PC|80.00|110.00
-Aleutia|D1 Mini Atom PC|19.00|23.00
-Aleutia|H2 Quad Core PC|40.00|80.00
-Advent|Advent Eco PC|24.00|50.00
+Fujitsu|FUTRO S100|10.00|0.96|11.00|
+CompuLab|fit-PC2|5.00|9.00|
+Aleutia|U6 Userful PC|80.00|110.00|
+Aleutia|D1 Mini Atom PC|19.00|23.00|
+Aleutia|H2 Quad Core PC|40.00|80.00|
+Advent|Advent Eco PC|24.00|50.00|
 VeryPC|GreenMedia FW22|17.63|
 VeryPC|BroadLeaf BL32-H-E53|28.72|
 VeryPC|GreenPC BE23|38.49|
 VeryPC|GreenPC BE20|34.57|
-Aleutia|P1 Marine PC|26.00|30.00
-Aleutia|T1 Fanless PC|10.00|14.00
+Aleutia|P1 Marine PC|26.00|30.00|
+Aleutia|T1 Fanless PC|10.00|14.00|
 Apple|Macintosh SE|44.00|
-Acer|Aspire X1700-U3700A|70.90|95.60
-Apple|120 GB Mac mini (MB463*/A)|15.40|28.30
-Apple|Mac Mini MA206LL/A|20.00|0.10|37.00
-Apple|Mac Mini MA206LL/A|19.00|1.20|41.00
+Acer|Aspire X1700-U3700A|70.90|95.60|
+Apple|120 GB Mac mini (MB463*/A)|15.40|28.30|
+Apple|Mac Mini MA206LL/A|20.00|0.10|37.00|
+Apple|Mac Mini MA206LL/A|19.00|1.20|41.00|
